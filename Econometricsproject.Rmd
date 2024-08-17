@@ -1,0 +1,312 @@
+---
+title: "¿Qué Impacto Tiene el Empleo Rural No Agrícola en los Niveles de Pobreza? Un Análisis para los Territorios Rurales de la República Dominicana"
+author: "Jose Gabriel Escarraman Reyes 1074193"
+date: "10/18/2020"
+output: pdf_document
+---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set( warning = FALSE, message = FALSE, comment = NA)
+
+```
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+**Abstracto:**
+ 
+Los territorios rurales de la República Dominicana han presentado, en comparación con las zonas
+urbanas, un marcado deterioro en términos de desarrollo, pobreza y bienestar. La población de
+habitantes rurales (especialmente los jóvenes y las mujeres) se ha ido reduciendo paulatinamente
+cada año, haciendo cada vez más vulnerable la economía rural. Una base económica estrecha y un
+mercado laboral concentrado son unas de las principales causas de que las familias que habitan en
+estas zonas rurales perciban bajos niveles de ingresos.
+
+
+En las últimas décadas, los campos dominicanos han experimentado una transformación de su estructura económica. Aunque la agricultura sigue siendo el sector de mayor peso en cuanto a ocupación se refiere, lentamente los sectores no agrícolas han ido ganando importancia dentro de las actividades que realizan los habitantes rurales. Con base en ese cambio estructural, este estudio busca encontrar y describir el impacto que provoca el aumento del empleo rural no agrícola en los niveles de pobreza de las zonas rurales dominicanas. Los resultados empíricos encontrados en esta investigación demuestran que, en efecto, hay una relación negativa entre los niveles de pobreza y el porcentaje de ocupaciones no agrícolas de los territorios rurales. Aunque la magnitud dicha relación va a depender en gran medida del tipo de empleo y del grupo específico de población rural que se analice. 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------
+**Palabras claves:** Empleo rural no agrícola, pobreza rural, pobreza monetaria, desarrollo rural
+
+\newpage
+
+
+# **Introducción**
+
+
+Los avances que se han hecho en el desarrollo rural de la República Dominicana no van acordes al crecimiento económico que ha experimentado el país en las últimas décadas. Todos los años, cada vez más familias dejan los campos en busca de mayores ingresos en zonas urbanas, deteriorando cada vez más el bienestar de las comunidades campesinas. En las últimas décadas la pobreza rural de la República Dominicana ha sido más acentuada que la urbana en términos monetarios. Si se habla de pobreza multidimensional, la brecha entre lo rural y lo urbano a nivel de educación, participación social, salud, entre otros aspectos, es mucho más amplia. Una de las causas principales de este deterioro es un mercado laboral débil y poco diversificado en los territorios rurales.
+
+
+A partir de la década de los 70, los sectores rurales han sido muy desatendidos en cuanto a políticas públicas se refiere. Y, en caso de que haya apoyo público, este se ha concentrado en sectores específicos como la agricultura. Por lo tanto, es fundamental dinamizar otros sectores en las zonas rurales.
+
+
+El desarrollo rural es un tema fundamental y poco estudiado en nuestro país. Los esfuerzos hechos para mejorar el desarrollo en los campos han sido más bien sectoriales. En términos generales, no se ha tomado un enfoque territorial que busque mejorar la calidad de vida de los campesinos. Es menester proponer alternativas y opciones de políticas que promuevan el bienestar de los territorios rurales. Entender como incide el empleo rural no agrícola en estas zonas puede ser clave a la hora de resolver este problema.
+
+### **Objetivo general del paper**
+
+En las últimas dos décadas ha habido una importante transición en la distribución de actividades en las que se ocupan los habitantes rurales, en donde el porcentaje de ocupaciones no agrícolas ha ido aumentando paulatinamente con respecto al sector tradicional de ocupaciones agrícolas. A raíz de este cambio estructural, la siguiente investigación busca analizar y describir la relación entre el Empleo Rural No Agrícola (ERNA) y los niveles de desarrollo y pobreza de las zonas rurales. También se analizará qué factores tienen más incidencia en el aumento del ERNA y que sectores de la población son más propensos a participar en las ocupaciones no agrícolas, haciendo especial énfasis en los jóvenes y las mujeres. Un objetivo adicional es el de indagar y proponer posibles medidas o recomendaciones que se podrían tomar para promover e impulsar el desarrollo rural a partir del ERNA en la República Dominicana. 
+
+### **Objetivos específicos**
+
+*	Determinar si un incremento del ERNA reduciría significativamente el nivel de pobreza monetaria en los campos 
+*	Determinar qué relación hay entre el ERNA y la dinamización de la economía rural
+*	Analizar que grupos de la población rural tienen más potencial para participar en empleos no agrícolas
+*	Analizar qué tipo de ocupaciones no agrícolas son más efectivas a la hora de reducir la pobreza
+
+\newpage
+
+# **Revisión de la literatura**
+
+## *Importancia de los territorios rurales*
+
+
+El desarrollo de los territorios rurales es de suma importancia para el desarrollo en general de cualquier nación. En el informe “Transformación rural para el futuro de América Latina y el Caribe” publicado por la CEPAL, Beredegué y Trivelli (2019) insisten en que el desarrollo de los países es interdependiente del desarrollo de sus territorios rurales y destacan “No hay desarrollo sustentable sin desarrollo rural” (Trivelli & Berdegué, 2019). 
+
+
+A pesar de su gran importancia, los territorios rurales han sido muy desestimados desde los años 70 en República Dominicana y otros países de la región. Esto debido, entre otros factores, al prejuicio común de que el campo está relacionado al atraso y a la pobreza, lo que ha llevado a un deterioro de la estructura social y económica de estos territorios, los cuales aún presentan secuelas.
+
+
+Esta falta de atención a los territorios rurales ha sido especialmente severa en los sectores no agrícolas de los campos, ya que muchas veces se asume que todo lo rural se limita a la agricultura y no se toman en cuenta otros sectores importantes de esta zona. Los sectores no agrícolas como el de servicios, turismo o energía también juegan un papel importante para reducir la pobreza en el campo y mejorar los niveles de vida de los campesinos. De acuerdo con Ramírez (Ramírez, 2019), el empleo que generan los sectores no agrícolas en el campo también es vital para el desarrollo: “*El Empleo Rural No Agrícola (ERNA), cuando es asalariado, se vincula a los Objetivos de Desarrollo Sostenible (ODS), y en particular con los objetivos 1, 2, 8 y 10 (fin de la pobreza, hambre cero, trabajo decente y crecimiento económico, y reducción de las desigualdades, respectivamente)*” (Ramírez, 2019, p. 3).
+
+
+En su artículo “El empleo rural no agrícola y la diversidad rural” Dirven (2004) describe el ERNA como: “*el empleo de los miembros de los hogares rurales en el sector no agrícola; donde “no agrícola” significa cualquier actividad externa a la agricultura, es decir, en la manufactura o los servicios; que se atienen a las definiciones estándares de las cuentas nacionales, según las cuales la agricultura produce bienes agroalimentarios no procesados utilizando recursos naturales (tierra, ríos/lagos/ océanos, aire)*” (Dirven M. , 2004).
+
+
+Es importante resaltar que el ERNA no necesariamente se tiene que efectuar en el campo. Cualquier persona que resida en una zona establecida como “rural” y que lleve a cabo un trabajo que no tenga que ver con el sector Agrícola (independientemente que lo haga en una zona rural o urbana) cabría dentro del concepto ERNA. 
+
+
+
+## *Situación Dominicana en cuanto a pobreza y ocupación rural.*
+
+En la última década los niveles de pobreza de la República Dominicana han sido más acentuados en zonas rurales que en zonas urbanas, haciéndose esto notar con el alto porcentaje de habitantes rurales en situación de pobreza extrema. Los bajos niveles de bienestar también han contribuido a que la población rural se haya reducido de 2.5 millones de habitantes en 2010 a 1.9 millones en 2019. 
+
+
+Según Del Rosario y Morrobel (2018) esta situación se debe en gran medida a tres factores principales: una base económica rural estrecha, un mercado laboral excluyente y concentrado, y un marco institucional débil que margina a los grupos vulnerables. En adición a esto, los campos dominicanos han sufrido de la ausencia de políticas públicas integrales con enfoque territorial rural, lo cual quizás no se ha podido llevar a cabo debido a la escasez de estudios y análisis en donde se contemple al entorno rural como un todo y no solo como un espacio de agricultura (Rosario & Morrobel, 2018). Los autores también señalan que un mercado laboral más diversificado y menos vulnerable puede explotar el potencial productivo de los territorios rurales y aumentar los niveles de ingreso de los campesinos (Rosario & Morrobel, 2018). 
+
+### **Tabla 1. Distribución de las ocupaciones rurales según su rama de actividad económica (2018)**
+ ![](C:/Users/jose-/Desktop/WD R/"Rural.png") 
+
+En 2018, con un 28% de participación, la agricultura fue la actividad de mayor peso en de las zonas rurales de la República Dominicana. Cabe destacar que la agricultura es una actividad en la que predominan los hombres, ya que solo un 6% de las mujeres se ocuparon en esta rama económica en 2018, mientras que casi un 40% de los hombres se dedicaron a la agricultura. Ramírez (2019) y Dirven (2004) argumentan que es común en toda Latinoamérica y el Caribe que la falta de participación de las mujeres en la agricultura sea compensada con una importante presencia de ellas en las ocupaciones no agrícolas. Siendo estas protagonistas en los sectores de servicios, comercio y enseñanza.
+
+
+En el artículo titulado “Empleo Rural No Agrícola en América Latina” publicado por la FAO, Ramírez (2019) señala que hay una marcada tendencia hacia una transformación de las ocupaciones rurales de agrícolas hacia no agrícolas (Ramírez, 2019). La República Dominicana no es la excepción, ya hubo una reducción de 5 puntos porcentuales en el porcentaje de habitantes rurales que se dedican a la agricultura en el periodo de 2010 a 2018. Dicha reducción fue compensada con un aumento de 67% a 72% del ERNA para el mismo periodo.
+
+### **Tabla 2. Variación en el porcentaje de personas ocupadas rurales según ocupación principal (agrícola y no agrícola)**
+![](C:/Users/jose-/Desktop/WD R/"ERNA.png") 
+
+\newpage
+
+# **Metodología de la investigación**
+
+
+Como ya se ha planteado anteriormente, se busca analizar los efectos que provoca la ocupación no agrícola en los niveles de pobreza y desarrollo de los territorios rurales, a modo de encontrar una recomendación o una potencial respuesta al deterioro de los niveles de vida en los campos. 
+
+
+### **Descripción del modelo**
+
+Para estos fines se buscará estimar un modelo de efectos inobservables constantes en el tiempo, utilizando datos de panel longitudinales con dimensión temporal T=4 y una dimensión de corte transversal n=11, el cual luciría de la siguiente manera: 
+
+ $y_{it}= beta_0+ \sum\limits_{j=1}^{n} (X_{jit} beta_{jit}) + a_{i}+u_{it}$
+
+En donde el índice t denota el grupo temporal de datos (el cual va de 2016 a 2019) y el índice i es el que identifica las observaciones de corte transversal, las cuales están divididas en las 11 regiones de desarrollo en República Dominicana según el Decreto 710-04. "$y$" es la variable dependiente en el año t y en la región i, "$beta 0$" es el intercepto del modelo. $X_{jit}$ es un vector de variables independientes las cuales (con base en la teoría planteada) se piensa que tienen algún impacto en la variable dependiente, la cual será los niveles de pobreza monetaria rural. $beta_{jit}$ es el estimador de efectos fijos o el estimador de efectos aleatorios (dependiendo de la transformación que se le haga al modelo) el cual describe el impacto de cada variable explicativa j a la variable dependiente. $a_i$ son las características no observables e invariantes en el tiempo de cada región y $U_{it}$ es el termino de error del modelo.
+
+
+Se escogió un modelo de efectos inobservables debido a que se piensa que hay factores (no presentes en la base de datos) que afectan a la variable dependiente de manera constante a la largo del periodo a analizar. Es decir, que el impacto de estas variables no varía con respecto al tiempo, pero si con respecto a la dimensión de corte transversal (las regiones). Un ejemplo de esto es la distancia relativa de las viviendas rurales con respecto a los poblados urbanos más cercanos. Esta es una variable que según los antecedentes bibliográficos afecta en gran medida al desarrollo de las comunidades rurales y está relacionada con otras variables como el tipo de empleo. No obstante, es lógico pensar que tales “distancias relativas” no cambien en el corto/mediano plazo, ósea, que se mantendrían relativamente constantes. Otro ejemplo similar son los niveles de educación de la población o la infraestructura de la zona.
+
+
+Lo que se busca al utilizar estos modelos es, mediante una transformación, evitar el sesgo de variable omitida que genera $a_i$. Que el modelo se ajuste mejor a la transformación de efectos fijos o efectos aleatorios dependerá directamente en el hecho de si los errores constantes del modelo están correlacionados (o no) con las demás variables explicativas. Si los efectos inobservables constantes están relacionados con las $Xi$, entonces es mejor usar efectos fijos, de lo contrario efectos aleatorios será más efectivo. En la sección siguiente se compararán ambos modelos y se realizara una prueba de especificación de Hausman para determinar cuál es más eficaz.
+
+Para evitar estimadores sesgados y/o inconsistentes se procuró cumplir con las siguientes condiciones para modelos con datos de panel: 
+*	Muestra transversal aleatoria
+*	Variación idiosincrática de las variables en el tiempo
+*	Exogeneidad estricta condicional en las variables no observables 
+*	homocedasticidad en los errores diferenciados.
+
+### **Datos**
+
+La muestra de datos fue extraída directamente de la Encuesta Nacional Continua de Fuerza de Trabajo (ENCFT) que realiza trimestralmente el Banco Central. Todos los datos fueron desagregados primero por región de desarrollo y luego por zona (rural y urbana), para quedar al final solo con las observaciones de territorios rurales correspondientes a cada región en un intervalo de tiempo de 2016 a 2019. Para la división de los datos por región, se utilizó la clasificación establecida en el Decreto 710-04 de la República Dominicana, el cual divide el territorio dominicano en 11 regiones de desarrollo que son: Santo Domingo, Santiago, Resto del Cibao Norte, Cibao Sur, Cibao Nordeste, Cibao Noroeste, Valdesia, El valle, Enriquillo, Higuamo y Yuma.
+
+
+La mayoría de las variables fueron desagregadas en forma de porcentaje, esto debido a que había importantes cambios en el tamaño de la población rural en cada año, por lo que se tomó porcentajes para evitar cualquier efecto indeseable provocado por el cambio en la población.
+
+
+Se utilizarán dos variables dependientes para efectuar la investigación: el porcentaje de habitantes rurales en situación de pobreza monetaria **extrema** por región y el porcentaje de habitantes rurales en situación pobreza monetaria **moderada** por región. 
+
+
+La variable explicativa de mayor interés para la investigación será el porcentaje trabajadores rurales ocupados en labores no agrícolas por región (en representación de los niveles de ERNA). En adición a esta, también se incluyeron un set de variables independientes las cuales se cree, en base a la bibliografía, que tienen alguna relación con la pobreza rural o con el ERNA. Por último, con el fin de captar los factores de tendencia en el modelo, también se incluyeron variables binarias correspondientes a cada año de la muestra, pero se omitió la del 2016 la cual sería el periodo base. En la tabla 3 se presentan las variables incluidas en el modelo y su signo esperado.
+
+### **Tabla 3. Descripción de variables**
+
+![](C:/Users/jose-/Desktop/WD R/"Variables.png") 
+\newpage
+
+# **Resultados**
+
+A continuación, se presentan los resultados obtenidos en dos tablas distintas. En la tabla 3 se presentan los estimadores de los modelos cuya variable dependiente es “% de Pobreza Moderada” y en la tabla 4 los modelos con variable dependiente “% Pobreza Extrema”. Las dos primeras columnas de cada tabla corresponden al modelo de efectos fijos con transformación intragrupal (within) y las columnas 3 y 4 corresponden al modelo de efectos aleatorios.
+
+
+## Pobreaza Moderada
+
+
+Los resultados para el modelo con pobreza monetaria moderada como variable dependiente son, casi en su mayoría, consistentes con la literatura analizada. El porcentaje de ERNA dentro de la población rural (la principal variable de interés) resulto tener un impacto negativo en los niveles de pobreza moderada, como se había predicho anteriormente. En el modelo de efectos fijos el coeficiente que acompaña a esta variable es negativo, y es -0.7 para el caso de regresión simple y -0.84 cuando se añaden más variables, en ambos casos los estimadores son muy significativos con un valor P menor a 0.01. Para fines de interpretación y utilizando el modelo de regresión múltiple se podría decir, por ejemplo, que un incremento de 25% en la ocupación rural no agrícola generaría una disminución de la pobreza monetaria rural en un 21%, manteniendo todo lo demás constante. 
+
+
+Vemos que el impacto no es completo (el coeficiente es menor que 1 en valor absoluto) pero si es muy relevante y significativo, lo cual va acorde con los textos de Dirven (Dirven M. , 2004) y Ramírez (Ramírez, 2019), los cuales resaltan que la diversificación del empleo rural hace a los territorios menos vulnerables y ayuda a reducir la pobreza. En cuanto al modelo de efectos aleatorios, los resultados correspondientes al ERNA son similares y los estimadores siguen siendo muy significativos, no obstante, estos tienen menor magnitud en comparación al modelo de efectos fijos ( -0.49 y -0.39 respectivamente). 
+
+```{r, echo=FALSE}
+library(tinytex)
+library(wooldridge)
+library(foreign)
+library(plm)
+library(Hmisc)
+library(sandwich)
+library(lmtest)
+library(zoo)
+library(readr)
+library(readxl)
+library(stargazer)
+
+paneldata <- read_csv("Datos de panel pobreza rural2.csv")
+
+
+#Modelos de Efectos fijos
+
+modeloEFsimple <- plm(pobrezam100  ~ y17+y18+y19+erna100, data= paneldata, index= c('region','ano'), model= 'within', effect= 'individual')
+
+modeloEF <- plm(pobrezam100  ~ y17+y18+y19+erna100+gini+informal100+educuni100+educmed100+educuni100.ii+analfa100+mujerocupada100+mujerocupada100.ii, data= paneldata, index= c('region','ano'), model= 'within', effect= 'individual')
+
+## Modelos efectos aleatorios
+modeloEAsimple <- plm(pobrezam100  ~ y17+y18+y19+erna100,data = paneldata, index= c('region','ano'), model= 'random', effect= 'individual')
+
+modeloEA <- plm(pobrezam100  ~ y17+y18+y19+erna100+gini+informal100+educuni100+educmed100+educuni100.ii+analfa100+mujerocupada100+mujerocupada100.ii,data = paneldata, index= c('region','ano'), model= 'random', effect= 'individual')
+
+
+stargazer(modeloEFsimple,modeloEF,modeloEAsimple,modeloEA, omit.stat=c("LL","ser") ,digits = 2, notes.label= "Niveles de significancia" ,column.sep.width = "4pt", header=TRUE, single.row = TRUE, title = "Resultados 1.POBREZA RURAL MODERADA", type = "text", out = "para proyecto1", column.labels = c("EF Simple","EF Multiple","EA Simple", "EA Multiple"), covariate.labels = c("2017","2018","2019","%ERNA","GINI","%Informal", "EducUNI","Emedia","EducUNI2", "%ANAFA","%MUJER", "%MUJER2"))
+
+
+```
+
+
+Todas las variables, excepto “%ANALFA” (Porcentaje de población rural analfabeta) tuvieron el signo esperado en ambos modelos, aunque algunas no fueron significativas estadísticamente. Sorprendentemente, el coeficiente de mayor magnitud en ambos modelos fue el que corresponde al porcentaje de mujeres en la población rural ocupadas en empleos remunerados. En ambos modelos el estimador fue muy significativo y también en ambos modelos el signo fue el esperado. Este resultado deja entrever lo fundamental que es la participación de la mujer en el mercado laboral de los territorios rurales.
+
+
+A continuación, se presenta la prueba de Especificación de Hausman. Con la cual se pudo constatar, contrario a lo que se esperaba, que el modelo más eficiente para este conjunto de datos es el modelo de efectos aleatorios. Con un valor P igual a 0.6384 no hay suficiente evidencia para rechazar la hipótesis nula, por lo que se llega a la conclusión de que el método de efectos aleatorios es el más efectivo:
+
+```{r, echo=FALSE}
+phtest(modeloEA,modeloEF)
+
+```
+
+
+Para validar los supuestos de eficiencia, también se realizó una prueba Breusch-Pagan de heterocedasticidad, la cual confirmo la hay presencia de varianza constante en los errores del modelo. Con un valor P de 0.5616, no hay suficiente evidencia para rechazar la hipótesis nula de homocedasticidad en el modelo.
+
+
+```{r, echo=FALSE}
+bptest(modeloEF, data = paneldata)
+bptest(modeloEA, data = paneldata)
+
+```
+\newpage
+
+## Pobreaza Extrema
+
+```{r,echo=FALSE}
+
+#Efectos Fijos
+
+modeloEFxsimple<-plm(pobrezax100 ~ y17+y18+y19+erna100, data= paneldata, index= c('region','ano'), model= 'within', effect= 'individual')
+
+modeloEFx <- plm(pobrezax100 ~ y17+y18+y19+erna100+gini+informal100+educuni100+educmed100+educuni100.ii+analfa100+mujerocupada100+mujerocupada100.ii, data= paneldata, index= c('region','ano'), model= 'within', effect= 'individual')
+
+##Efectos Aleatorios
+modeloEAx <- plm(pobrezax100  ~ y17+y18+y19+erna100+gini+informal100+educuni100+educmed100+educuni100.ii+analfa100+mujerocupada100+mujerocupada100.ii, data= paneldata, index= c('region','ano'), model= 'random', effect= 'individual')
+
+modeloEAxsimple <- plm(pobrezax100  ~ y17+y18+y19+erna100,data = paneldata, index= c('region','ano'), model= 'random', effect= 'individual')
+
+stargazer(modeloEFxsimple,modeloEFx,modeloEAxsimple,modeloEAx,omit.stat=c("LL","ser") ,digits = 2, notes.label= "Niveles de significancia" ,column.sep.width = "4pt", header=FALSE, single.row = TRUE, title = "Resultados 2.POBREZA RURAL EXTREMA", type = "text", out = "para proyecto 2", column.labels = c("EF Simple","EF Multiple","EA Simple", "EA Multiple"), covariate.labels = c("2017","2018","2019","%ERNA","GINI","%Informal", "EducUNI","Emedia","EducUNI2", "%ANAFA","%MUJER", "%MUJER2"))
+
+
+```
+
+
+Los modelos con “% Pobreza extrema” como variable dependiente arrojaron resultados interesantes, ya que difieren de los vistos anteriormente en algunos aspectos importantes. El coeficiente correspondiente al ERNA en ambos modelos no es significativo, y aunque tiene el signo esperado su impacto es muy pequeño. Por lo que se puede afirmar que, a diferencia del caso de pobreza moderada, el ERNA no tiene un efecto directo real en la pobreza extrema.  Esto va en contra de los supuestos planteados anteriormente, aunque no contradice totalmente a la literatura. Debido a que es posible que, en el caso de población en situación de pobreza extrema, las ocupaciones no agrícolas en territorios rurales estén relacionadas a actividades de “Refugio”, con bajos ingresos y poca estabilidad. En ese caso, el ERNA funcionaría solamente como una herramienta de subsistencia en casos de desesperación y no adquiriría las características de diversificación y formalidad en el empleo. Este hallazgo demuestra que el efecto ERNA puede ser o no efectivo dependiendo de a qué tipo de población se refiera.
+
+
+Al igual que antes, se realizó la prueba de especificación de Hausman para determinar que método se ajusta mejor a los datos con pobreza extrema como variable dependiente. Con un valor P de 0.009, se rechazó la hipótesis nula y se concluye que el método es el de efectos fijos es más eficiente para el caso de pobreza monetaria extrema.
+
+```{r, echo=FALSE}
+phtest(modeloEAx,modeloEFx)
+
+```
+
+```{r, echo=FALSE}
+bptest(modeloEAx, data = paneldata)
+bptest(modeloEFx, data = paneldata)
+
+```
+
+\newpage
+# **Conclusiones y Recomendaciones **
+
+En esta investigación se analizó el efecto que genera la ocupación rural no agrícola en los niveles de desarrollo y pobreza de los territorios rurales de la República Dominicana. Los resultados encontrados revelan que sí existe una relación negativa entre la pobreza rural y el ERNA, pero el grado de dicha relación depende del grupo de la población que se analice. Esto es así ya que se pudo determinar que el ERNA tiene un impacto muy relevante en la reducción de los niveles de pobreza monetaria moderada, pero no en los niveles de pobreza extrema. Siendo esta última relación casi inexistente según los estimadores obtenidos, lo que se puede deber a que en el caso de personas en pobreza extrema los empleos no agrícolas son ocupaciones “improvisadas” o de refugio para situaciones de desesperación, las cuales no aportan a aumentar los niveles de ingreso y proveer estabilidad para las familias pobres.
+
+
+Las ocupaciones no agrícolas pueden propiciar la diversificación del mercado laboral rural y hacer menos vulnerable la base productiva de los campos en la República Dominicana. Pero dicha diversificación, debe centrarse en proveer trabajos decentes y de calidad, ya que un aumento sin especificaciones en los niveles de ERNA no necesariamente reducirá la pobreza. Por lo tanto, es menester determinar qué tipo ERNA o qué tipo de ocupaciones rurales serían las más eficaces a la hora de socavar la pobreza en las distintas regiones. 
+
+
+Los empleos generados por el sector servicios (en su mayoría) cumplen con la característica de estabilidad de ingresos y reducción de la informalidad. Las ocupaciones generadas por sectores emergentes de turismo rural y energías renovables también son alternativas interesantes, que con cierta planificación pueden ayudar a muchas familias a salir de la pobreza. Por otro lado, trabajos informales con bajas barreras de entrada suelen ser propensos a mantener los niveles de pobreza ya que no generan estabilidad.
+
+\newpage
+
+# **Referencias**
+
+Berdegué, J., & Favareto, A. (2019). Desarrollo Territorial Rural en América Latina y el Caribe. 2030. - Alimentación, agricultura y desarrollo rural en América Latina y el Caribe(32), 18.
+
+
+Del Rosario, P. J., & Morrobel. (2011). Población rural y desarrollo dominicano. Santo Domingo: Instituto Dominicano de Investigaciones Agropecuarias y Forestales.
+
+
+Del Rosario, P., & Morrobel, J. (2018). Ocupación y pobreza rural en la República Dominicana. Santo Domingo: Instituto Dominicano de Investigaciones Agropecuarias y Forestales (Idiaf).
+
+
+Del Rosario, P., Morrobel, j., & Escarraman, A. (2015). Los territorios rurales funcionales: Una opción para la política de desarrollo rural territorial en la República Dominicana. Santo Domingo: Instituto Dominicano de investigaciones Agropecuarias y Forestales.
+
+
+Dirven, M. (2004). El empleo rural no agrícola y la diversidad rural. Revista de la cepal 83.
+
+
+Dirven, M. (2016). Juventud rural y empleo decente en América Latina. Santiago de Chile: FAO.
+
+
+MEPyD, & ONE. (2012). Metodología para el cálculo de la medición oficial de la pobreza monetaria en República Dominicana. Santo Domingo.
+
+
+
+Ramírez, E. (2019). Empleo rural no agrícola en América Latina. 2030 - Alimentación, agricultura y desarrollo rural en América Latina y el Caribe FAO.
+
+
+# **Anexo **
+
+## Prueba de correlación serial
+```{r, echo=TRUE}
+## Pobreza Extrema
+u_X<- (resid(modeloEFx)^2)
+library(Hmisc)
+uR1_X<- Lag(u_X, shift= -1)
+AR1_X<- lm(u_X ~ uR1_X, data= mathpnl)
+summary(AR1_X)
+
+
+```
+
+
+```{r, echo=TRUE}
+## Pobreza Moderada
+u_M <- (resid(modeloEF)^2)
+library(Hmisc)
+uR1_M<- Lag(u_M, shift= -1)
+AR1_M<- lm(u_M ~ uR1_M, data= mathpnl)
+summary(AR1_M)
+
+```
+
+
